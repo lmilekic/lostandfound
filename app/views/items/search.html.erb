@@ -1,0 +1,11 @@
+<h1>Search</h1>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:name, "Name:") %>
+  <%= text_field_tag(:name) %>
+  <%= label_tag(:descript, "Description:") %>
+  <%= text_field_tag(:descript) %>
+  <%= label_tag(:type, "Type:") %>
+  <%= text_field_tag(:type) %>
+  <%= submit_tag("Search") %>
+<% end %>
